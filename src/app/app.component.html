@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<div> {{ items | async | json }} </div>
+<div> {{ user | async | json}} </div>
+<button (click)="login()">Login</button>
+<button (click)="logout()">Logout</button>
